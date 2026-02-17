@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+try
+{
+    Console.Write("Digite um número inteiro: ");
+    int numero = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine($"Número digitado: {numero}");
+}
+catch
+{
+    Console.WriteLine("Entrada inválida. Digite apenas números.");
+}
+
